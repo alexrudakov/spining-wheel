@@ -16,10 +16,10 @@ class Div extends React.Component {
     console.log(filtered)
     return (
     <div>
-      <div>
-        <p>{thing ? thing.idCategory : thing}</p>
-        <p>{thing ? thing.strCategory : thing}</p>
-        <img src={thing ? thing.strCategoryThumb : thing} />
+      <div className='food'>
+        <p className='food__p1'>Option no.{thing ? thing.idCategory : thing}</p>
+        <p className='food__p2'>{thing ? thing.strCategory : thing}</p>
+        <img src={thing ? thing.strCategoryThumb : thing} className='food__pic'/>
       </div>
     </div>
     )}
