@@ -81,4 +81,18 @@
    font-family: comic sans-serif;
  }
 
+ .containerDiv{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .containerDiv h1{
+  color:rgb(47, 9, 117);
+  box-shadow: 5px solid rgba(47, 9, 117, 0.5);
+ }
+
+ .recipesHeader {
+   font-size: 26px;
+ }
  

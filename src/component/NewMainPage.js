@@ -44,7 +44,7 @@ class NewMainPage extends React.Component {
   componentDidMount() {
     this.getData();
   }
-  comonentDidMount(){
+  componentDidUpdate(){
     if(this.state.random.id !== this.props.match.params.id && this.props.match.params.id){
       Axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${this.props.match.params.id}`)
       .then(response => {
