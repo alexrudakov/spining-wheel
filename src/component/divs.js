@@ -6,10 +6,10 @@ class Div extends React.Component {
   console.log(this.props.random)
     return (
     <div>
-      <div>
-        <p>{this.props.random.idCategory}</p>
-        <p>{this.props.random.strCategory}</p>
-        <img src={this.props.random.strCategoryThumb} alt="pic" />
+      <div className='food'>
+        <p className='food__p1'>Option #{this.props.random.idCategory}</p>
+        <p className='food__p2'>{this.props.random.strCategory}</p>
+        <img className='food__pic' src={this.props.random.strCategoryThumb} alt="pic" />
       </div>
     </div>
     )}
