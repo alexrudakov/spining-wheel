@@ -1,5 +1,4 @@
 import React from 'react';
-import Div from './divs';
 import {Link} from 'react-router-dom';
 
 

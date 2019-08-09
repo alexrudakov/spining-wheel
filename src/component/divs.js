@@ -3,23 +3,13 @@ import React from "react";
 class Div extends React.Component {
 
   render() {
-    const number = Math.floor(Math.random() * 12) + 1;
-    let filtered = this.props.data.categories.find(item => {
-      if(item.idCategory == number){
-        console.log(item);
-        return item;
-      }
-    })
-    console.log(filtered)
-    var thing = filtered;
-    console.log(thing ? thing.idCategory : thing);
-    console.log(filtered)
+  console.log(this.props.random)
     return (
     <div>
       <div>
-        <p>{thing ? thing.idCategory : thing}</p>
-        <p>{thing ? thing.strCategory : thing}</p>
-        <img src={thing ? thing.strCategoryThumb : thing} />
+        <p>{this.props.random.idCategory}</p>
+        <p>{this.props.random.strCategory}</p>
+        <img src={this.props.random.strCategoryThumb} alt="pic" />
       </div>
     </div>
     )}
